@@ -1,0 +1,138 @@
+[
+  {
+    "acronym": "RO",
+    "name": "Rondônia",
+    "territorialExtension": 237590.547
+  },
+  {
+    "acronym": "AC",
+    "name": "Acre",
+    "territorialExtension": 164123.040
+  },
+  {
+    "acronym": "AM",
+    "name": "Amazonas",
+    "territorialExtension": 1559159.148
+  },
+  {
+    "acronym": "RR",
+    "name": "Roraima",
+    "territorialExtension": 224300.506
+  },
+  {
+    "acronym": "PA",
+    "name": "Pará",
+    "territorialExtension": 1247954.666
+  },
+  {
+    "acronym": "AP",
+    "name": "Amapá",
+    "territorialExtension": 142828.521
+  },
+  {
+    "acronym": "TO",
+    "name": "Tocantins",
+    "territorialExtension": 277720.520
+  },
+  {
+    "acronym": "MA",
+    "name": "Maranhão",
+    "territorialExtension": 331937.450
+  },
+  {
+    "acronym": "PI",
+    "name": "Piauí",
+    "territorialExtension": 251577.738
+  },
+  {
+    "acronym": "CE",
+    "name": "Ceará",
+    "territorialExtension": 148920.472
+  },
+  {
+    "acronym": "RN",
+    "name": "Rio Grande do Norte",
+    "territorialExtension": 52811.047
+  },
+  {
+    "acronym": "PB",
+    "name": "Paraíba",
+    "territorialExtension": 56585.000
+  },
+  {
+    "acronym": "PE",
+    "name": "Pernambuco",
+    "territorialExtension": 98311.616
+  },
+  {
+    "acronym": "AL",
+    "name": "Alagoas",
+    "territorialExtension": 27778.506
+  },
+  {
+    "acronym": "SE",
+    "name": "Sergipe",
+    "territorialExtension": 21915.116
+  },
+  {
+    "acronym": "BA",
+    "name": "Bahia",
+    "territorialExtension": 564733.177
+  },
+  {
+    "acronym": "MG",
+    "name": "Minas Gerais",
+    "territorialExtension": 586522.122
+  },
+  {
+    "acronym": "ES",
+    "name": "Espírito Santo",
+    "territorialExtension": 46095.583
+  },
+  {
+    "acronym": "RJ",
+    "name": "Rio de Janeiro",
+    "territorialExtension": 43780.172
+  },
+  {
+    "acronym": "SP",
+    "name": "São Paulo",
+    "territorialExtension": 248222.362
+  },
+  {
+    "acronym": "PR",
+    "name": "Paraná",
+    "territorialExtension": 199307.922
+  },
+  {
+    "acronym": "SC",
+    "name": "Santa Catarina",
+    "territorialExtension": 95736.165
+  },
+  {
+    "acronym": "RS",
+    "name": "Rio Grande do Sul",
+    "territorialExtension": 281730.223
+  },
+  {
+    "acronym": "MS",
+    "name": "Mato Grosso do Sul",
+    "territorialExtension": 357145.532
+  },
+  {
+    "id": 51,
+    "acronym": "MT",
+    "name": "Mato Grosso",
+    "territorialExtension": 903366.192
+  },
+  {
+    "acronym": "GO",
+    "name": "Goiás",
+    "territorialExtension": 340111.783
+  },
+  {
+    "acronym": "DF",
+    "name": "Distrito Federal",
+    "territorialExtension": 5779.999
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Source": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "pathFile": "\"C:\\Users\\bzzca\\Codenation\\csharp-3\\Source\\\""
+      }
+    }
+  }
+}
