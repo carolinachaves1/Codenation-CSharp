@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Codenation.Challenge.Exceptions;
 using Source.Models;
-using Source.Utilities;
 
 namespace Codenation.Challenge
 {
