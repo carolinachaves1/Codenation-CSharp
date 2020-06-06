@@ -1,12 +1,14 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Codenation.Challenge.Models
+namespace Source.Models
 {
-    [Table("company")]
-    public class Company
+    [Table("challenge")]
+    public class Challenge
     {
         [Key]
         [Column("id")]

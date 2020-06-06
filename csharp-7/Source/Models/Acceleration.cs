@@ -1,12 +1,14 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Codenation.Challenge.Models
+namespace Source.Models
 {
-    [Table("company")]
-    public class Company
+    [Table("acceleration")]
+    public class Acceleration
     {
         [Key]
         [Column("id")]
@@ -17,6 +19,8 @@ namespace Codenation.Challenge.Models
         [Required]
         [MaxLength(50)]
         public string Slug { get; set; }
+        [Required]
+        public int Challenge_Id { get; set; }
         [Required]
         public DateTime Created_at { get; set; }
     }
