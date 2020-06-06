@@ -10,12 +10,24 @@ namespace Source.Models
     [Table("submission")]
     public class Submission
     {
-        [ForeignKey("user_id")]
-        public int User_Id { get; set; }
-        public int Challenge_Id { get; set; }
-        public decimal Score { get; set; }
-        public DateTime Created_at { get; set; }
 
-       
+        [ForeignKey("user_id")]
+        [Column("user_id")]
+        public User User { get; set; }
+        public User UserId { get; set; }
+
+        [ForeignKey("challenge_id")]
+        [Column("challenge_id")]
+        public Challenge Challenge { get; set; }
+        public Challenge ChallengeId { get; set; }
+
+        [Required]
+        [Column("email", TypeName = "decimal(9,2)")]
+        public float Score { get; set; }
+
+        [Column("created_at", TypeName = "timestamp")]
+        public DateTime CreatedAt { get; set; }
+
+
     }
 }

@@ -13,13 +13,17 @@ namespace Source.Models
         [Key]
         [Column("id")]
         public int Id { get; set; }
+
         [Required]
-        [MaxLength(100)]
+        [Column("name", TypeName = "varchar(100)")]
         public string Name { get; set; }
+
         [Required]
-        [MaxLength(50)]
+        [Column("slug", TypeName = "varchar(50)")]
         public string Slug { get; set; }
+
         [Required]
-        public DateTime Created_at { get; set; }
+        [Column("created_at", TypeName = "timestamp")]
+        public DateTime CreatedAt { get; set; }
     }
 }
