@@ -11,5 +11,7 @@ namespace Codenation.Challenge.Models
         public string Name { get; set; }
         public string Slug { get; set; }
         public DateTime CreatedAt { get; set; }
+
+        public ICollection<Submission> Submissions { get; set; }
     }
 }

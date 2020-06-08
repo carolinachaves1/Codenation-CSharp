@@ -14,6 +14,8 @@ namespace Codenation.Challenge.Models
         public string Nickname { get; set; }
         public string Password { get; set; }
         public DateTime CreatedAt { get; set; }
-  
+
+        public ICollection<Candidate> Candidates { get; set; }
+        public ICollection<Submission> Submissions { get; set; }
     }
 }

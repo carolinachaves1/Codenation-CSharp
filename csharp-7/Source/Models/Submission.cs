@@ -6,9 +6,12 @@ namespace Codenation.Challenge.Models
 {
     public class Submission
     {
-        public User UserId { get; set; }
-        public Challenge ChallengeId { get; set; }
+        public int UserId { get; set; }
+        public int ChallengeId { get; set; }
         public DateTime CreatedAt { get; set; }
 
+
+        public User User { get; set; }
+        public Challenge Challenge { get; set; }
     }
 }

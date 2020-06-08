@@ -14,5 +14,9 @@ namespace Codenation.Challenge.Models
         public int CompanyId { get; set; }      
         public int Status { get; set; }
         public DateTime CreatedAt { get; set; }
+
+        public User User { get; set; }
+        public Acceleration Acceleration { get; set; }
+        public Company Company { get; set; }
     }
 }
