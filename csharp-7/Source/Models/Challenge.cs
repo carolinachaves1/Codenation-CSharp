@@ -1,12 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Codenation.Challenge.Models
 {
-    [Table("company")]
-    public class Company
+    [Table("challenge")]
+    public class Challenge
     {
         [Key, Column("id")]
         public int Id { get; set; }
@@ -20,6 +20,6 @@ namespace Codenation.Challenge.Models
         [Required, Column("created_at", TypeName = "timestamp")]
         public DateTime CreatedAt { get; set; }
 
-        public ICollection<Candidate> Candidates { get; set; }
+        public ICollection<Submission> Submissions { get; set; }
     }
 }
