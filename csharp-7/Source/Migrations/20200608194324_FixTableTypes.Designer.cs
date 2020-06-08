@@ -4,14 +4,16 @@ using Codenation.Challenge.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Source.Migrations
 {
     [DbContext(typeof(CodenationContext))]
-    partial class CodenationContextModelSnapshot : ModelSnapshot
+    [Migration("20200608194324_FixTableTypes")]
+    partial class FixTableTypes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,12 +40,12 @@ namespace Source.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnName("name")
-                        .HasMaxLength(100);
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("Slug")
                         .IsRequired()
                         .HasColumnName("slug")
-                        .HasMaxLength(50);
+                        .HasColumnType("varchar(50)");
 
                     b.HasKey("Id");
 
@@ -97,12 +99,12 @@ namespace Source.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnName("name")
-                        .HasMaxLength(100);
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("Slug")
                         .IsRequired()
                         .HasColumnName("slug")
-                        .HasMaxLength(50);
+                        .HasColumnType("varchar(50)");
 
                     b.HasKey("Id");
 
@@ -125,12 +127,12 @@ namespace Source.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnName("name")
-                        .HasMaxLength(100);
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("Slug")
                         .IsRequired()
                         .HasColumnName("slug")
-                        .HasMaxLength(50);
+                        .HasColumnType("varchar(50)");
 
                     b.HasKey("Id");
 
@@ -152,6 +154,7 @@ namespace Source.Migrations
                         .HasColumnType("timestamp");
 
                     b.Property<decimal>("Score")
+                        .HasConversion(new ValueConverter<decimal, decimal>(v => default(decimal), v => default(decimal), new ConverterMappingHints(precision: 38, scale: 17)))
                         .HasColumnName("score")
                         .HasColumnType("decimal(9,2)");
 
@@ -178,22 +181,22 @@ namespace Source.Migrations
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnName("email")
-                        .HasMaxLength(100);
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnName("full_name")
-                        .HasMaxLength(100);
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("Nickname")
                         .IsRequired()
                         .HasColumnName("nickname")
-                        .HasMaxLength(50);
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnName("password")
-                        .HasMaxLength(255);
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
