@@ -21,5 +21,6 @@ namespace Codenation.Challenge.Models
         public DateTime CreatedAt { get; set; }
 
         public ICollection<Submission> Submissions { get; set; }
+        public ICollection<Acceleration> Accelerations { get; set; }
     }
 }
