@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Codenation.Challenge.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Source.Controllers
@@ -10,6 +11,15 @@ namespace Source.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly CodenationContext _context;
+
+        public ValuesController(CodenationContext context)
+        {
+            _context = context;
+        }
+
+
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
