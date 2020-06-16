@@ -8,6 +8,7 @@ namespace Codenation.Challenge.Services
     public class AccelerationService : IAccelerationService
     {
         private readonly CodenationContext _context;
+
         public AccelerationService(CodenationContext context)
         {
             _context = context;
