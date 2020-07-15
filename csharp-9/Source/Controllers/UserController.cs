@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AutoMapper;
 using Codenation.Challenge.DTOs;
 using Codenation.Challenge.Models;
@@ -25,31 +26,42 @@ namespace Codenation.Challenge.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<UserDTO>> GetAll(string accelerationName = null, int? companyId = null)
         {
-            if(accelerationName == null || companyId == null)
+            if (accelerationName != null)
+            {
+                var response = _mapper.Map<List<UserDTO>>(_userService.FindByAccelerationName(accelerationName));
+                return Ok(response);
+            }
+            else if (companyId.HasValue)
+            {
+                var response = _mapper.Map<List<UserDTO>>(_userService.FindByCompanyId(companyId.Value));
+                return Ok(response);
+            }
+            else 
             {
                 return NoContent();
             }
-
-            var accelerationNameResult = _userService.FindByAccelerationName(accelerationName);
-            var companyIdResult = _userService.FindByCompanyId(companyId.Value);
-
-            var result = new List<User>();
-            
-
         }
 
         // GET api/user/{id}
         [HttpGet("{id}")]
         public ActionResult<UserDTO> Get(int id)
-        {            
-            throw new NotImplementedException();
+        {
+            var response = _mapper.Map<List<UserDTO>>(_userService.FindById(id));
+            return Ok(response);
         }
 
         // POST api/user
         [HttpPost]
         public ActionResult<UserDTO> Post([FromBody] UserDTO value)
         {
-            throw new NotImplementedException();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            else
+            {
+                return Ok(_mapper.Map<UserDTO>(_userService.Save(_mapper.Map<User>(value))));
+            }
         }   
      
     }
