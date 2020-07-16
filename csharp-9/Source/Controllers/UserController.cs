@@ -26,19 +26,21 @@ namespace Codenation.Challenge.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<UserDTO>> GetAll(string accelerationName = null, int? companyId = null)
         {
-            if (accelerationName != null)
+
+            if(accelerationName == null && companyId == null)
+            {
+                return NoContent();
+            }
+
+            if (accelerationName != null && !companyId.HasValue)
             {
                 var response = _mapper.Map<List<UserDTO>>(_userService.FindByAccelerationName(accelerationName));
                 return Ok(response);
             }
-            else if (companyId.HasValue)
+            else 
             {
                 var response = _mapper.Map<List<UserDTO>>(_userService.FindByCompanyId(companyId.Value));
                 return Ok(response);
-            }
-            else 
-            {
-                return NoContent();
             }
         }
 
@@ -58,11 +60,8 @@ namespace Codenation.Challenge.Controllers
             {
                 return BadRequest(ModelState);
             }
-            else
-            {
-                return Ok(_mapper.Map<UserDTO>(_userService.Save(_mapper.Map<User>(value))));
-            }
+            
+             return Ok(_mapper.Map<UserDTO>(_userService.Save(_mapper.Map<User>(value))));
         }   
-     
     }
 }
