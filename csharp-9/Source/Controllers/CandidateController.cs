@@ -23,14 +23,14 @@ namespace Codenation.Challenge.Controllers
         }
 
         [HttpGet("{userId}/{accelerationId}/{companyId}")]
-        public ActionResult<CandidateDTO> GetCandidateById(int userId, int accelerationId, int companyId)
+        public ActionResult<CandidateDTO> Get(int userId, int accelerationId, int companyId)
         {
             var response = _mapper.Map<CandidateDTO>(_candidateService.FindById(userId, accelerationId, companyId));
             return Ok(response);
         }
 
         [HttpGet]
-        public ActionResult<IList<CandidateDTO>> GetCandidate(int? companyId = null, int? accelerationId = null)
+        public ActionResult<IEnumerable<CandidateDTO>> GetAll(int? companyId = null, int? accelerationId = null)
         {
             if(companyId.HasValue && accelerationId == null)
             {

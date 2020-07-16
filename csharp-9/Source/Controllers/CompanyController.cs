@@ -23,14 +23,14 @@ namespace Codenation.Challenge.Controllers
         }
 
         [HttpGet("id")]
-        public ActionResult<CompanyDTO> GetCompanyById(int id)
+        public ActionResult<CompanyDTO> Get(int id)
         {
             var response = _mapper.Map<CompanyDTO>(_companyService.FindById(id));
             return Ok(response);
         }
 
         [HttpGet]
-        public ActionResult<List<CompanyDTO>> GetCompany(int? accelerationId = null, int? userId = null)
+        public ActionResult<IEnumerable<CompanyDTO>> GetAll(int? accelerationId = null, int? userId = null)
         {
             if (accelerationId.HasValue && userId == null)
             {
@@ -44,6 +44,21 @@ namespace Codenation.Challenge.Controllers
             }
 
             return NoContent();
+        }
+
+        [HttpPost]
+        public ActionResult<CompanyDTO> Post([FromBody] CompanyDTO value)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var company = _mapper.Map<Company>(value);
+            _companyService.Save(company);
+
+            var response = _mapper.Map<CompanyDTO>(value);
+            return Ok(response);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Codenation.Challenge.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<ChallengeDTO>> GetChallenge(int? accelerationId = null, int? userId = null)
+        public ActionResult<IEnumerable<ChallengeDTO>> GetAll(int? accelerationId = null, int? userId = null)
         {
             if(accelerationId == null && User == null)
             {

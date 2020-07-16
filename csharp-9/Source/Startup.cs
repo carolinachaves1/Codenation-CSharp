@@ -12,6 +12,7 @@ using Microsoft.Extensions.Options;
 using AutoMapper;
 using Codenation.Challenge.Models;
 using Codenation.Challenge.Services;
+using Codenation.Challenge;
 
 namespace Source
 {
@@ -30,12 +31,22 @@ namespace Source
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<CodenationContext>();
             services.AddAutoMapper(typeof(Startup));
-            services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAccelerationService, AccelerationService>();
-            services.AddScoped<ISubmissionService, SubmissionService>();
-            services.AddScoped<ICompanyService, CompanyService>();
-            services.AddScoped<IChallengeService, ChallengeService>();
             services.AddScoped<ICandidateService, CandidateService>();
+            services.AddScoped<IChallengeService, ChallengeService>();
+            services.AddScoped<ICompanyService, CompanyService>();
+            services.AddScoped<ISubmissionService, SubmissionService>();
+            services.AddScoped<IUserService, UserService>();
+
+            services.AddAutoMapper(typeof(AutoMapperProfile));
+
+            /*var mappingConfig = new MapperConfiguration(m =>
+            {
+                m.AddProfile(new AutoMapperProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

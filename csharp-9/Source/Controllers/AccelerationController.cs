@@ -23,14 +23,14 @@ namespace Codenation.Challenge.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<AccelerationDTO> GetAccelerationById(int id)
+        public ActionResult<AccelerationDTO> Get(int id)
         {
             var response = _mapper.Map<AccelerationDTO>(_accelerationService.FindById(id));
             return Ok(response);
         }
 
         [HttpGet]
-        public ActionResult<IList<AccelerationDTO>> GetAcceleration(int? companyId = null)
+        public ActionResult<IEnumerable<AccelerationDTO>> GetAll(int? companyId = null)
         {
             if(companyId == null)
             {
