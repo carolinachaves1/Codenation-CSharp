@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuites time="4.385" tests="45" failures="9">
+  <testsuite id="0" name="Source.TestSubmission.dll" tests="45" failures="9" time="4.385">
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 1)" time="0.0740000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 2)" time="0.0280000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 2)" time="0.0200000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 1)" time="0.0100000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Find_By_Id(id: 3)" time="0.0100000" />
+    <testcase classname="Codenation.Challenge.AccelerationControllerTest" name="Codenation.Challenge.AccelerationControllerTest.Should_Be_Ok_When_Post" time="0.0180000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 3, accelerationId: 3, companyId: 3)" time="0.5900000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 1, accelerationId: 1, companyId: 1)" time="0.0270000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Id(userId: 2, accelerationId: 2, companyId: 2)" time="0.1140000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 3)" time="0.1150000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 2)" time="0.0340000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Company_Id(companyId: 1)" time="0.0400000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 3)" time="0.0460000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 1)" time="0.0410000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Find_By_Accelaration_Id(accelerationId: 2)" time="0.0360000" />
+    <testcase classname="Codenation.Challenge.CandidateControllerTest" name="Codenation.Challenge.CandidateControllerTest.Should_Be_Ok_When_Post" time="0.0440000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 1, userId: 1)" time="0.0990000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 3, userId: 3)" time="0.0770000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Find_By_Accelartion_And_User(accelerationId: 2, userId: 2)" time="0.0240000" />
+    <testcase classname="Codenation.Challenge.ChallengeControllerTest" name="Codenation.Challenge.ChallengeControllerTest.Should_Be_Ok_When_Post" time="0.0370000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Post" time="0.6080000">
+      <error message="Assert.Equal() Failure&#xD;&#xA;Expected: 999&#xD;&#xA;Actual:   0">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Post() in C:\Users\bzzca\Codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 87</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(accelerationId: 1)" time="0.0500000">
+      <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; CompanyDTO&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.Company, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; Codenation.Challenge.DTOs.CompanyDTO">   at lambda_method(Closure , List`1 , CompanyDTO , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CompanyController.GetAll(Nullable`1 accelerationId, Nullable`1 userId) in C:\Users\bzzca\Codenation\csharp-9\Source\Controllers\CompanyController.cs:line 37
+   at Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\bzzca\Codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 44</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(accelerationId: 2)" time="0.0370000">
+      <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;List`1 -&gt; CompanyDTO&#xD;&#xA;System.Collections.Generic.List`1[[Codenation.Challenge.Models.Company, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -&gt; Codenation.Challenge.DTOs.CompanyDTO">   at lambda_method(Closure , List`1 , CompanyDTO , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.CompanyController.GetAll(Nullable`1 accelerationId, Nullable`1 userId) in C:\Users\bzzca\Codenation\csharp-9\Source\Controllers\CompanyController.cs:line 37
+   at Codenation.Challenge.CompanyControllerTest.Should_Be_OK_When_Find_By_Accelaration_Id(Int32 accelerationId) in C:\Users\bzzca\Codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 44</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 2)" time="0.0530000">
+      <error message="Assert.NotNull() Failure">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\bzzca\Codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 69</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 3)" time="0.0410000">
+      <error message="Assert.NotNull() Failure">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\bzzca\Codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 69</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(userId: 1)" time="0.0390000">
+      <error message="Assert.NotNull() Failure">   at Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_User_Id(Int32 userId) in C:\Users\bzzca\Codenation\csharp-9\Source.TestSubmission\CompanyControllerTest.cs:line 69</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 1)" time="0.0470000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 3)" time="0.0400000" />
+    <testcase classname="Codenation.Challenge.CompanyControllerTest" name="Codenation.Challenge.CompanyControllerTest.Should_Be_Ok_When_Find_By_Id(id: 2)" time="0.0330000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 2)" time="0.5590000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 1)" time="0.0240000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Higher_Score_When_Get_By_Challenge_Id(challengeId: 3)" time="0.0130000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 2, accelerationId: 2)" time="0.2450000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 1, accelerationId: 1)" time="0.0330000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Find_By_Challenge_And_Acceleration(challengeId: 3, accelerationId: 3)" time="0.0290000" />
+    <testcase classname="Codenation.Challenge.SubmissionControllerTest" name="Codenation.Challenge.SubmissionControllerTest.Should_Be_Ok_When_Post" time="0.0440000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 1)" time="0.6200000">
+      <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;User -&gt; List`1&#xD;&#xA;Codenation.Challenge.Models.User -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.UserDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">   at lambda_method(Closure , User , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.UserController.Get(Int32 id) in C:\Users\bzzca\Codenation\csharp-9\Source\Controllers\UserController.cs:line 48
+   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(Int32 id) in C:\Users\bzzca\Codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 24</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 3)" time="0.0350000">
+      <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;User -&gt; List`1&#xD;&#xA;Codenation.Challenge.Models.User -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.UserDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">   at lambda_method(Closure , User , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.UserController.Get(Int32 id) in C:\Users\bzzca\Codenation\csharp-9\Source\Controllers\UserController.cs:line 48
+   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(Int32 id) in C:\Users\bzzca\Codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 24</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(id: 2)" time="0.0390000">
+      <error message="AutoMapper.AutoMapperMappingException : Missing type map configuration or unsupported mapping.&#xD;&#xA;&#xD;&#xA;Mapping types:&#xD;&#xA;User -&gt; List`1&#xD;&#xA;Codenation.Challenge.Models.User -&gt; System.Collections.Generic.List`1[[Codenation.Challenge.DTOs.UserDTO, Source, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">   at lambda_method(Closure , User , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Codenation.Challenge.Controllers.UserController.Get(Int32 id) in C:\Users\bzzca\Codenation\csharp-9\Source\Controllers\UserController.cs:line 48
+   at Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_By_Id(Int32 id) in C:\Users\bzzca\Codenation\csharp-9\Source.TestSubmission\UserControllerTest.cs:line 24</error>
+    </testcase>
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 2)" time="0.0480000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 1)" time="0.0360000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Company_Id(companyId: 3)" time="0.0430000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_OK_When_Post" time="0.0520000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(accelerationName: &quot;Velvet Grass&quot;)" time="0.0860000" />
+    <testcase classname="Codenation.Challenge.UserControllerTest" name="Codenation.Challenge.UserControllerTest.Should_Be_Ok_When_Get_All_By_Accelaration_Name(accelerationName: &quot;Progesterone&quot;)" time="0.0470000" />
+  </testsuite>
+</testsuites>
