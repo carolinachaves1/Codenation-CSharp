@@ -21,7 +21,7 @@ namespace Codenation.Challenge.Services
             var request = context.ValidatedRequest as ValidatedTokenRequest;
             if (request != null)
             {
-                var user = _context.Users.Where(x => x.Email == request.UserName).FirstOrDefault();
+                var user = _context.Users.FirstOrDefault(x => x.Email.Equals(request.UserName));
                 if(user != null)
                 {
                     var claims = GetUserClaims(user);
@@ -49,7 +49,6 @@ namespace Codenation.Challenge.Services
 
             return new[]
             {
-                new Claim(ClaimTypes.Name, user.FullName),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Role, role)
             };

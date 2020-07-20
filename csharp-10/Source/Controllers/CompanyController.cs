@@ -12,6 +12,7 @@ namespace Codenation.Challenge.Controllers
 {
     [Route("api/[controller]")]    
     [ApiController]
+    [Authorize]
     public class CompanyController : ControllerBase
     {
         private ICompanyService service;

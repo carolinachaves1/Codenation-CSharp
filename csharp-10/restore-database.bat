@@ -1,1 +1,1 @@
-@sqlcmd -S "(localdb)\mssqllocaldb" -Q "RESTORE DATABASE Codenation FROM DISK='Codenation.bak'"
+@sqlcmd -S "DESKTOP-B40CMJ1" -Q "RESTORE DATABASE CodenationToken FROM DISK='Codenation.bak'"

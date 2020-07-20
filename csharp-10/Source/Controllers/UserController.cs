@@ -12,6 +12,7 @@ namespace Codenation.Challenge.Controllers
 {
     [Route("api/[controller]")]    
     [ApiController]
+    [Authorize(Policy = "Admin")]
     public class UserController : ControllerBase
     {
         private IUserService service;

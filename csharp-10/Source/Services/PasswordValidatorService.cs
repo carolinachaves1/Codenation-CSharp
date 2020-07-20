@@ -1,6 +1,7 @@
 using Codenation.Challenge.Models;
 using IdentityServer4.Models;
 using IdentityServer4.Validation;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
  
@@ -17,7 +18,7 @@ namespace Codenation.Challenge.Services
 
         public Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
         {
-            var user = _context.Users.Where(x => x.Email == context.UserName && x.Password == context.Password).FirstOrDefault();
+            var user = _context.Users.Where(x => x.Email.Equals(context.UserName) && x.Password.Equals(context.Password)).AsNoTracking().FirstOrDefault();
 
             if(user == null)
             {
