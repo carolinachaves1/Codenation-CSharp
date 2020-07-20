@@ -1,0 +1,1 @@
+@sqlcmd -S "DESKTOP-B40CMJ1" -Q "RESTORE DATABASE CodenationToken FROM DISK='Codenation.bak'"
