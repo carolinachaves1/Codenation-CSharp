@@ -17,12 +17,30 @@ namespace Codenation.Challenge.Services
 
         public Quote GetAnyQuote()
         {
-            throw new System.NotImplementedException();
+           var quote = _context.Quotes.Count();
+
+            if(quote == 0)
+            {
+                return null;
+            }
+
+            var random = _randomService.RandomInteger(quote);
+
+            return _context.Quotes.ElementAt(random);
         }
 
         public Quote GetAnyQuote(string actor)
         {
-            throw new System.NotImplementedException();
+            var quoteByActor = _context.Quotes.Count(x => x.Actor == actor);
+
+            if (quoteByActor == 0)
+            {
+                return null;
+            }
+
+            var random = _randomService.RandomInteger(quoteByActor);
+
+            return _context.Quotes.Where(x => x.Actor == actor).ElementAt(random);
         }
     }
 }
