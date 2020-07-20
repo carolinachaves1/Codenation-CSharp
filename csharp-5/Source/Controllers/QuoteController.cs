@@ -40,7 +40,7 @@ namespace Codenation.Challenge.Controllers
         [HttpGet("{actor}")]
         public ActionResult<QuoteView> GetAnyQuote(string actor)
         {
-            var quote = _service.GetAnyQuote();
+            var quote = _service.GetAnyQuote(actor);
 
             if (quote == null)
             {
