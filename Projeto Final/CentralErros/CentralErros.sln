@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralDeErros", "CentralDeErros\CentralDeErros.csproj", "{88F46147-BEA2-4E33-B407-A1E3B90B7D5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralErros", "CentralErros\CentralErros.csproj", "{6170CCD0-53B7-4474-B002-C9E0B190D3FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{88F46147-BEA2-4E33-B407-A1E3B90B7D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88F46147-BEA2-4E33-B407-A1E3B90B7D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88F46147-BEA2-4E33-B407-A1E3B90B7D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88F46147-BEA2-4E33-B407-A1E3B90B7D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6170CCD0-53B7-4474-B002-C9E0B190D3FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6170CCD0-53B7-4474-B002-C9E0B190D3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6170CCD0-53B7-4474-B002-C9E0B190D3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6170CCD0-53B7-4474-B002-C9E0B190D3FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {81AE5709-FAB0-47C6-B1BF-12553D6C523D}
+		SolutionGuid = {B36C06B7-AC36-4B8F-80F3-85A0F809CE3F}
 	EndGlobalSection
 EndGlobal

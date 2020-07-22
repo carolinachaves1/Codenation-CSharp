@@ -1,6 +1,6 @@
 using System;
 
-namespace CentralDeErros
+namespace CentralErros
 {
     public class WeatherForecast
     {
