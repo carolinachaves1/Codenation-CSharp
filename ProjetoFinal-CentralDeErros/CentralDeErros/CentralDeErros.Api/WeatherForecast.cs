@@ -1,6 +1,6 @@
 using System;
 
-namespace CentralErros
+namespace CentralDeErros.Api
 {
     public class WeatherForecast
     {

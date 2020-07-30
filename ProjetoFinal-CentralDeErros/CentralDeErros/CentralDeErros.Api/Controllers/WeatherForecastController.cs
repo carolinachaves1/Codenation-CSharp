@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace CentralErros.Controllers
+namespace CentralDeErros.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]

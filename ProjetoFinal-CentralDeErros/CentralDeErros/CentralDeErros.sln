@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralErros", "CentralErros\CentralErros.csproj", "{6170CCD0-53B7-4474-B002-C9E0B190D3FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralDeErros.Api", "CentralDeErros.Api\CentralDeErros.Api.csproj", "{1EE9268C-DE7B-48C5-806B-3E17A5B6DE75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6170CCD0-53B7-4474-B002-C9E0B190D3FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6170CCD0-53B7-4474-B002-C9E0B190D3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6170CCD0-53B7-4474-B002-C9E0B190D3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6170CCD0-53B7-4474-B002-C9E0B190D3FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EE9268C-DE7B-48C5-806B-3E17A5B6DE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE9268C-DE7B-48C5-806B-3E17A5B6DE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE9268C-DE7B-48C5-806B-3E17A5B6DE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE9268C-DE7B-48C5-806B-3E17A5B6DE75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B36C06B7-AC36-4B8F-80F3-85A0F809CE3F}
+		SolutionGuid = {E6148D6E-71D8-4849-B8A9-99ED1B7B04F5}
 	EndGlobalSection
 EndGlobal
