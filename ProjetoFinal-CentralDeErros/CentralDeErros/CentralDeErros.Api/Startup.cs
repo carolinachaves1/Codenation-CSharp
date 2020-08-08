@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using CentralDeErros.Business.Managers;
+using CentralDeErros.Business.Managers.Interfaces;
 using CentralDeErros.DataLayer;
 using CentralDeErros.DataLayer.Interfaces;
 using CentralDeErros.DataLayer.Repository;
@@ -10,11 +12,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace CentralDeErros.Api
 {
@@ -35,6 +35,9 @@ namespace CentralDeErros.Api
             services.AddScoped<IErrorRepository, ErrorRepository>();
             services.AddScoped<ILevelRepository, LevelRepository>();
             services.AddScoped<IEnvironmentRepository, EnvironmentRepository>();
+            services.AddScoped<IErrorManager, ErrorManager>();
+            services.AddScoped<ILevelManager, LevelManager>();
+            services.AddScoped<IEnvironmentManager, EnvironmentManager>();
 
             var mappingConfig = new MapperConfiguration(config =>
             {
