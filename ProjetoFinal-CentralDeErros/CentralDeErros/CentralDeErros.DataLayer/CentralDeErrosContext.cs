@@ -8,7 +8,7 @@ namespace CentralDeErros.DataLayer
     public class CentralDeErrosContext : IdentityDbContext
     {
         public DbSet<Error> Errors { get; set; }
-        public DbSet<Environment> Categories { get; set; }
+        public DbSet<Environment> Environments { get; set; }
         public DbSet<Level> Levels { get; set; }
 
         public CentralDeErrosContext(DbContextOptions<CentralDeErrosContext> options) : base(options)

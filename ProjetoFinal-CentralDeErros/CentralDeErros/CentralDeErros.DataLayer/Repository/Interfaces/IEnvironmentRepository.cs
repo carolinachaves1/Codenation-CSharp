@@ -4,8 +4,8 @@ using System.Text;
 
 namespace CentralDeErros.DataLayer.Interfaces
 {
-    public interface ICategoryRepository
+    public interface IEnvironmentRepository
     {
-        Environment EnvironmentByName(string name);
+        Models.Environment EnvironmentByName(string name);
     }
 }

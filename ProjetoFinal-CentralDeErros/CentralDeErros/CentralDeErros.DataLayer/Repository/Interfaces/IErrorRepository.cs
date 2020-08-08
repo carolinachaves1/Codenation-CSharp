@@ -8,7 +8,8 @@ namespace CentralDeErros.DataLayer.Interfaces
         IEnumerable<Error> GetAll();
         Error GetById(int id);
         IEnumerable<Error> GetByLevel(string level);
-        IEnumerable<Error> GetByCategory(string category);
+        IEnumerable<Error> GetByEnvironment(string category);
         int Save(Error error);
     }
+    
 }
